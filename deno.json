@@ -68,5 +68,9 @@
     "noImplicitThis": true,
     "noImplicitReturns": true,
     "exactOptionalPropertyTypes": true
+  },
+
+  "tasks": {
+    "commitMessage": "deno run  --allow-all ./utils/aicommit.ts"
   }
 }
