@@ -10,9 +10,7 @@
       "include": ["src/"]
     },
     "rules": {
-      "tags": ["recommended"],
-      "include": ["ban-untagged-todo"],
-      "exclude": []
+      "tags": ["recommended"]
     }
   },
 
@@ -53,7 +51,7 @@
     "module": "esnext",
     "moduleDetection": "force",
 
-    "lib": ["deno.window", "deno.ns", "deno.worker"],
+    "lib": ["deno.window"],
 
     "useDefineForClassFields": true,
     "experimentalDecorators": true,
@@ -71,6 +69,6 @@
   },
 
   "tasks": {
-    "commitMessage": "deno run  --allow-all ./utils/aicommit.ts"
+    "commitMessage": "deno run --allow-all ./utils/aicommit.ts"
   }
 }

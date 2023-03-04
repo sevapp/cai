@@ -6,8 +6,6 @@ import { constructCommitMessageQuery } from '../src/queries/generateCommitMessag
 async function generateCommit(changes: string): Promise<string> {
   const apiKey = Deno.env.get("CHATGPT_API_KEY");
 
-  console.log(apiKey);
-
   const prompt = constructCommitMessageQuery(changes);
 
   const response = await fetch(
